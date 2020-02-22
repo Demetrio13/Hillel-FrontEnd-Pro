@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lesson 2</title>
+    <title>Lesson 3</title>
 </head>
 <body>
     <h1>Hello again!</h1>
     <script>
-    let userName = "Dmitriy";
-    typeof userName;
-    let userSurname = "Byednin";
-    let age = "39";
-    let message = "Hello!"
-    console.log (userName + userSurname + age + message );
-    let str = userName + userSurname + age + message;
-    alert (str);
-    </script>
+    "use strict";
+    const name = prompt('Enter your name:', '');
+    const age = prompt('Enter your age:', '');
+    const ask = confirm('Алкоголь употребляем?');
+    
+    if (!ask) {
+        alert('Так держать, '+ name + '!');
+    } else {              
+            if (age < 18) {
+                alert('Ты что, ' + name + '?! Маме расскажу!');
+            } else if (age >= 18  && age <= 40) {
+                alert(name + '! ' + 'Только водку с пивом не мешай...');
+            } else if (age > 40) {
+                    alert('Не злоупотребляйте, ' + name + '!');
+        }
+    }
+
+        </script>
 </body>
 </html>
