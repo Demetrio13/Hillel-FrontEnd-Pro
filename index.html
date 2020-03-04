@@ -11,16 +11,20 @@
     <script>
     "use strict";
     
-    
+    let radius = prompt('Enter the radius of the circle:', '');
+
     function calculateCircleArea(radius) {
-        radius = prompt('Enter the radius of the circle:', '');
-        return 2 * Math.PI * radius;
+        
+        return Math.PI * (radius * radius);
     }
 
     console.log('Circle Area is: '+ calculateCircleArea());
 
+    function calculateCircumference(radius) {
+        return 2 * Math.PI * radius;
+    }
 
-
+    console.log('Circum ference is: '+ calculateCircumference());
 
         </script>
 </body>
