@@ -10,22 +10,29 @@
     <h1>Hello again!</h1>
     <script>
     "use strict";
-    
-    let radius = prompt('Enter the radius of the circle:', '');
-
-    function calculateCircleArea(radius) {
+        let radius = prompt('Enter the radius of the circle:', '');
         
-        return Math.PI * (radius * radius);
+
+        function calculateCircleArea(r) {
+        return Math.PI * (r * r);
     }
 
-    console.log('Circle Area is: '+ calculateCircleArea());
+    console.log('Circle Area is: '+ calculateCircleArea(radius));
 
-    function calculateCircumference(radius) {
-        return 2 * Math.PI * radius;
+    function calculateCircumference(a) {
+        return 2 * Math.PI * a;
     }
 
-    console.log('Circum ference is: '+ calculateCircumference());
+    console.log('Circum ference is: '+ calculateCircumference(radius));
 
+    let n = prompt('Enter first number:', '');
+    let n2 = prompt('Enter second number:', '');
+
+    function average(c, d) {
+    return (c + d) / average.length;
+    }
+    console.log('Average is: '+ average(n, n2));
+        
         </script>
 </body>
 </html>
