@@ -10,10 +10,10 @@
     <h1>Hello again!</h1>
     <script>
     "use strict";
-        let radius = prompt('Enter the radius of the circle:', '');
+    
+    let radius = prompt('Enter the radius of the circle:', '');
         
-
-        function calculateCircleArea(r) {
+    function calculateCircleArea(r) {
         return Math.PI * (r * r);
     }
 
@@ -28,11 +28,16 @@
     let n = prompt('Enter first number:', '');
     let n2 = prompt('Enter second number:', '');
 
-    function average(c, d) {
-    return (c + d) / average.length;
-    }
-    console.log('Average is: '+ average(n, n2));
+    function getAverage(c, d) {
         
+         return  (+c + +d)/2;
+            }
+        
+    console.log('Average is: ' + getAverage(n, n2));
+
+    
+
+    
         </script>
 </body>
 </html>
