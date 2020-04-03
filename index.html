@@ -16,27 +16,48 @@
     function calculateCircleArea(r) {
         return Math.PI * (r * r);
     }
-
     console.log('Circle Area is: '+ calculateCircleArea(radius));
 
     function calculateCircumference(a) {
         return 2 * Math.PI * a;
     }
-
     console.log('Circum ference is: '+ calculateCircumference(radius));
 
     let n = prompt('Enter first number:', '');
     let n2 = prompt('Enter second number:', '');
 
     function getAverage(c, d) {
-        
          return  (+c + +d)/2;
             }
-        
-    console.log('Average is: ' + getAverage(n, n2));
+        console.log('Average is: ' + getAverage(n, n2));
 
+    function checkNumber(x, y) {
+        return typeof x === 'number' && typeof y === 'number';
+    }
     
+    function calc(num1, num2, sign) {
+        
+            if (checkNumber(num1, num2)) {
+                     
+                if (sign === "+") {
+                    return (num1 + num2);
+                }
+                if (sign === "-") {
+                    return (num1 - num2);
+                }
+                if (sign === "*") {
+                    return (num1 * num2);
+                }
+                if (num2 == 0 && sign == "/") {
+                    alert ('Sorry, you cannot divide by 0')
+                
+                } else if (num2 != 0 && sign === "/") {
+                    return (num1 / num2);
+                }
 
+            return 'Enter number please!';
+            }
+        }
     
         </script>
 </body>
